@@ -1,0 +1,123 @@
+//
+// Grid
+// --------------------------------------------------
+
+// to center a column
+@mixin centered() {
+	position :relative;
+	margin-left: auto;
+	margin-right: auto;
+	float: none !important;
+}
+
+// to uncenter a column
+@mixin uncentered() {
+	margin-left: 0;
+	margin-right: 0;
+	float: left !important;
+}
+
+// to uncenter a column
+@mixin unpush() {
+	left: 0 !important;
+}
+@mixin unpull() {
+	right: 0 !important;
+}
+
+// We use this to do clear floats
+@mixin gridColumn($index, $size) {
+  .#{$size}-#{$index} {
+		width: percentage($index*1/$grid-columns);
+	}
+  .#{$size}-offset-#{$index} {
+  	position :relative;
+  	margin-left: percentage($index*1/$grid-columns);
+  }
+  .#{$size}-push-#{$index} {
+  	position :relative;
+  	left: percentage($index*1/$grid-columns);
+  	right:auto;
+  }
+  .#{$size}-pull-#{$index} {
+  	position :relative;
+  	right: percentage($index*1/$grid-columns);
+  	left:auto;
+  }
+}
+
+// We use this to do clear floats
+@mixin gridColumns($size) {
+	@for $i from 1 through $grid-columns {
+  	@include gridColumn($i, $size);
+	}
+  .#{$size}-centered {
+  	@include centered;
+  }
+  .#{$size}-uncentered {
+  	@include uncentered;
+  }
+  .#{$size}-unpush {
+  	@include unpush;
+  }
+  .#{$size}-unpull {
+  	@include unpull;
+  }
+}
+
+.row{
+  @include clearfix;
+	width:100%;
+    max-width: $large-screen;
+  margin:$vertical-margin;
+  padding:$vertical-padding;
+}
+.container{
+    max-width: $large-screen;
+  @include clearfix;
+  margin:auto;
+}
+
+.column, .columns{
+	width:100%;
+	float:left;
+}
+
+.content{
+  margin:$horizontal-margin;
+  padding:$horizontal-padding;
+}
+
+@include gridColumns('small');
+
+@media only screen and (min-width: #{$small-screen}) {
+  /*.row{
+    max-width: $small-screen;
+  }
+  .container{
+    max-width: $small-screen;
+  }*/
+  @include gridColumns('medium');
+}
+
+
+@media only screen and (min-width: #{$medium-screen}) {
+ /* .row{
+    max-width: $medium-screen;
+  }
+  .container{
+    max-width: $medium-screen;
+  }*/
+  @include gridColumns('large');
+}
+
+
+@media only screen and (min-width: #{$large-screen}) {
+  /*.row{
+    max-width: $large-screen;
+  }
+  .container{
+    max-width: $large-screen;
+  }*/
+  @include gridColumns('x-large');
+}

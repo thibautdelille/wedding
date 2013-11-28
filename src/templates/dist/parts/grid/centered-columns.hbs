@@ -1,0 +1,53 @@
+<section id="centered-columns">
+  <div class="row">
+    <div class="column medium-12">
+      <div class="content">
+        <h2>Centered Columns</h2>
+        <p>Centered columns are placed in the middle of the row. This does not center their content but centers the grid element itself. This is accomplished by adding a class of <code>x-large-centered</code>, <code>large-centered</code>, <code>medium-centered</code> or <code>small-centered</code> depending on which breakpoint you want the columns to center on. Small versions will carry through all breakpoints if not overridden by a large version. You can center any number of columns you have. To have a column not carry its <code>small-centered</code> to <code>large</code>, add a class of <code>large-uncentered</code>.</p>
+        <h4>classes:</h4>
+        <p><code>.small-centered</code>: center the div at the small size</p>
+        <p><code>.medium-centered</code>: center the div at the medium size (inherit value from <code>small</code> if not defined)</p>
+        <p><code>.medium-uncentered</code>: used if small is centered and medium is uncentered</p>
+        <p><code>.large-centered</code>: center the div at the large size (inherit value from <code>medium</code> if not defined)</p>
+        <p><code>.large-uncentered</code>: used if medium is centered and large is uncentered</p>
+        <p><code>.x-large-centered</code>: center the div at the x-large size (inherit value from <code>large</code> if not defined)</p>
+        <p><code>.x-large-uncentered</code>: used if large is centered and x-large is uncentered</p>
+
+        <h4>example:</h4>
+    <pre class="prettyprint linenums">
+&lt;div class="row"&gt;
+  &lt;div class="small-3 small-centered columns"&gt;3 centered&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+  &lt;div class="small-6 medium-centered columns"&gt;6 centered&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+  &lt;div class="small-9 small-centered large-uncentered columns"&gt;9 centered&lt;/div&gt;
+&lt;/div&gt;
+    </pre>
+      </div>
+    </div>
+  </div>
+  <div class="row example">
+    <div class="small-3 small-centered columns">
+      <div class="content">
+        <p>3 centered</p>
+      </div>
+    </div>
+  </div>
+  <div class="row example">
+    <div class="small-6 medium-centered columns">
+      <div class="content">
+        <p>6 centered</p>
+      </div>
+    </div>
+  </div>
+  <div class="row example">
+    <div class="small-9 small-centered large-uncentered columns">
+      <div class="content">
+        <p class="hidden_large">9 centered</p>
+        <p class="hidden_small visible_large">9 uncentered</p>
+      </div>
+    </div>
+  </div>
+</section>

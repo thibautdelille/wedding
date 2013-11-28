@@ -1,0 +1,22 @@
+{
+  "name": "Grid",
+  "version": "1.0.0",
+  "description": "Simple grid system with 4 breakpoints",
+  "author": {
+    "url": "http://www.thibautdelille.com",
+    "name": "Thibaut Delille"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-connect": "~0.3.0",
+    "matchdep": "~0.1.2",
+    "assemble": "~0.4.1",
+    "grunt-contrib-watch": "~0.4.4",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-cssmin": "~0.6.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-sass": "~0.6.0",
+    "grunt-autoprefixer": "~0.1.20130615"
+  },
+  "repository": {}
+}

@@ -1,0 +1,55 @@
+@function darken($color) {
+}
+
+// colors
+// Greys
+$black:        #000;
+$gray-darker:  #333;
+$gray-dark:    #666;
+$gray:         #999;
+$gray-light:   #BBB;
+$gray-lighter: #EEE;
+$white:        #FFF;
+
+// Accent colors
+// -------------------------
+$blue:                  #049cdb;
+$blue-dark:             #0064cd;
+$green:                 #46a546;
+$red:                   #dd010d;
+$red-dark:              #9f020a;
+$yellow:                #ffc40d;
+$orange:                #f89406;
+$pink:                  #c3325f;
+$purple:                #7a43b6;
+
+// Links
+// -------------------------
+$link-color:             $red;
+$link-color-hover:       $red-dark;
+
+
+// number grid columns
+$grid-columns : 12;
+
+
+// Spacing
+$spacing:.5em;
+
+$horizontal-margin : 0 $spacing;
+$horizontal-padding : 0 $spacing;
+$vertical-margin : $spacing auto;
+$vertical-padding : $spacing 0;
+
+// Media Queries
+$small-screen: 768px !default;
+$medium-screen: 1024px !default;
+$large-screen: 1440px !default;
+
+$max-width-row:$large-screen;
+
+@mixin dropshadow() {
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+}

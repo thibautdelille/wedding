@@ -1,0 +1,86 @@
+
+@import "_variables";
+@import "framework/_clearing";
+/* Documentation Overrides */
+
+$transparentWhite : rgba(255,255,255,.7);
+$white : rgba(255,255,255,1);
+$darkGrey : rgba(110,110,110,1);
+$redaau : rgba(237,28,46,1);
+$solidGrey : rgba(230,230,230,1);
+$transparentGrey : rgba(230,230,230,.3);
+.grey{
+  color:$darkGrey;
+}
+
+.icon-aau_logo{
+  color:$redaau;
+  font-size:2em;
+}
+.icon-aau_logo_title {
+  font-size:2em;
+}
+
+// Base classes
+code{
+  padding: 0px 4px;
+  font-family: Monaco,Menlo,Consolas,"Courier New",monospace;
+  font-size: 14px;
+  color: #d14;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+.row{
+	&.example{
+		.columns{
+			background:$transparentWhite;
+			.content{
+				background:$transparentGrey;
+				border: 1px solid $solidGrey;
+			}
+		}
+	}
+}
+
+.navbar-inner{
+  background-color:$white;
+}
+
+#ajax-container{
+  max-width:1000px;
+  margin:auto;
+  background-color:$transparentGrey;
+  width:100%;
+  min-height:100px;
+}
+
+table{
+  border:1px solid #CCC;
+  tbody > tr > td,
+  thead > tr > th{
+    padding:8px;
+    border:1px solid #CCC;
+  }
+}
+
+.table-scrollable {
+  width: 100%;
+  margin-bottom: 15px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  border: 1px solid #ddd;
+}
+
+@media only screen and (min-width: #{$small-screen}) {
+  .table-scrollable {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    border: 1px none
+  }
+}

@@ -1,0 +1,103 @@
+<section id="predefined-html-classes">
+  <div class="row">
+    <div class="column medium-12">
+      <div class="content">
+        <h2>Predefined HTML Classes</h2>
+        <p>These are examples of different ways to use the Grid. Since this Framework is mobile-first, we'll stack content by default. There are 4 different grids based on 3 different break points to allow you to create fairly complex layouts and even drop columns:
+        <ul>
+          <li>small < 768</li>
+          <li>768 <= medium < 1024</li>
+          <li>1024 <= large < 1440 </li>
+          <li>1440 <= x-large </li>
+        </ul>
+
+        <h4>classes:</h4>
+        <p><code>.row</code> : define a row</p>
+        <p><code>.column</code> or <code>columns</code> : define a column</p>
+        <p><code>.small-#</code> : define the number of columns the div will take in small size (12 if not defined)</p>
+        <p><code>.medium-#</code> : define the number of columns the div will take in medium size (inherit value from <code>small</code> if not defined)</p>
+        <p><code>.large-#</code> : define the number of columns the div will take in large size (inherit value from <code>medium</code> if not defined)</p>
+        <p><code>.x-large-#</code> : define the number of columns the div will take in x-large size (inherit value from <code>large</code> if not defined)</p>
+
+        This means you can create some pretty complex layouts and even drop columns if you want.</p>
+        <h4>example:</h4>
+    <pre class="prettyprint linenums">
+&lt;div class="row"&gt;
+  &lt;div class="small-2 medium-4 columns"&gt;...&lt;/div&gt;
+  &lt;div class="small-4 medium-4 columns"&gt;...&lt;/div&gt;
+  &lt;div class="small-6 medium-4 columns"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+  &lt;div class="medium-3 columns"&gt;...&lt;/div&gt;
+  &lt;div class="medium-6 columns"&gt;...&lt;/div&gt;
+  &lt;div class="medium-3 columns"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+  &lt;div class="small-6 medium-2 columns"&gt;...&lt;/div&gt;
+  &lt;div class="small-6 medium-8 columns"&gt;...&lt;/div&gt;
+  &lt;div class="medium-2 columns"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+    </pre>
+      </div>
+    </div>
+  </div>
+  <div class="row example">
+    <div class="small-2 medium-4 columns">
+      <div class="content">
+        <p class="hidden_medium">2</p>
+        <p class="hidden_small visible_medium">4</p>
+      </div>
+    </div>
+    <div class="small-4 medium-4 columns">
+      <div class="content">
+        <p>4</p>
+      </div>
+    </div>
+    <div class="small-6 medium-4 columns">
+      <div class="content">
+        <p class="hidden_medium">6</p>
+        <p class="hidden_small visible_medium">4</p>
+      </div>
+    </div>
+  </div>
+  <div class="row example">
+    <div class="medium-3 columns">
+      <div class="content">
+        <p class="hidden_medium">12</p>
+        <p class="hidden_small visible_medium">3</p>
+      </div>
+    </div>
+    <div class="medium-6 columns">
+      <div class="content">
+        <p class="hidden_medium">12</p>
+        <p class="hidden_small visible_medium">6</p>
+      </div>
+    </div>
+    <div class="medium-3 columns">
+      <div class="content">
+        <p class="hidden_medium">12</p>
+        <p class="hidden_small visible_medium">3</p>
+      </div>
+    </div>
+  </div>
+  <div class="row example">
+    <div class="small-6 medium-2 columns">
+      <div class="content">
+        <p class="hidden_medium">6</p>
+        <p class="hidden_small visible_medium">2</p>
+      </div>
+    </div>
+    <div class="small-6 medium-8 columns">
+      <div class="content">
+        <p class="hidden_medium">6</p>
+        <p class="hidden_small visible_medium">2</p>
+      </div>
+    </div>
+    <div class="medium-2 columns">
+      <div class="content">
+        <p class="hidden_medium">12</p>
+        <p class="hidden_small visible_medium">2</p>
+      </div>
+    </div>
+  </div>
+</section>

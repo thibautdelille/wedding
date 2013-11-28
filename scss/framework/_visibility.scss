@@ -1,0 +1,94 @@
+//
+// Visibility
+// --------------------------------------------------
+
+@mixin visible($size, $static_size) {
+	@if $size == $static_size{
+		.visible_#{$static_size} {
+			display:block !important;
+		}
+	}
+}
+
+@mixin visibles($size) {
+
+	@include visible($size, "small");
+	@include visible($size, "medium");
+	@include visible($size, "large");
+	@include visible($size, "x-large");
+	.hidden_#{$size}  {
+		display:none !important;
+	}
+}
+
+//
+// Floating
+// --------------------------------------------------
+
+@mixin float($size, $static_size) {
+  @if $size == $static_size{
+    .float-right_#{$static_size} {
+      float:right !important;
+    }
+    .float-left_#{$static_size} {
+      float:left !important;
+    }
+  }
+}
+
+@mixin floats($size) {
+  @include float($size, "small");
+  @include float($size, "medium");
+  @include float($size, "large");
+  @include float($size, "x-large");
+  .float-none_#{$size}  {
+    float:none !important;
+  }
+}
+
+//
+// Padding
+// --------------------------------------------------
+
+@mixin padding($size, $static_size) {
+  @if $size == $static_size{
+    .padded_#{$static_size} {
+      padding:$spacing !important;
+    }
+    .padded_#{$static_size} {
+      padding:$spacing !important;
+    }
+  }
+}
+
+@mixin paddeds($size) {
+  @include padding($size, "small");
+  @include padding($size, "medium");
+  @include padding($size, "large");
+  @include padding($size, "x-large");
+  .padded-none_#{$size}  {
+    padding:0 !important;
+  }
+}
+
+@mixin reponsives_classes($size) {
+  @include visibles($size);
+  @include floats($size);
+  @include paddeds($size);
+}
+
+@include reponsives_classes("small");
+
+@media only screen and (min-width: #{$small-screen}) {
+	@include reponsives_classes("medium");
+}
+
+
+@media only screen and (min-width: #{$medium-screen}) {
+	@include reponsives_classes("large");
+}
+
+
+@media only screen and (min-width: #{$large-screen}) {
+	@include reponsives_classes("x-large");
+}
