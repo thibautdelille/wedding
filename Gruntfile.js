@@ -204,7 +204,7 @@ module.exports = function(grunt) {
         tasks: 'scss'
       },
       html: {
-        files: ['src/**/*.hbs'],
+        files: ['src/**/*.hbs', 'src/**/*.json'],
         tasks: 'html'
       },
       vendors: {

@@ -13,7 +13,13 @@ object,
 embed { height: 100%; }
 img { -ms-interpolation-mode: bicubic; }
 
-p{font-family:"NewCaledoniaW01-Regular";}
+p, ul li{
+	font-family:"NewCaledoniaW01-Regular";
+	a{
+		text-decoration: underline;
+		color:#892121
+	}
+}
 .padded{
   padding:$spacing;
 }
@@ -101,6 +107,7 @@ a{
 	}
 }
 ul.nav{
+	@include clearfix();
 	margin: 0;
 	padding: 0;
 	border-top:solid 1px #eee;
