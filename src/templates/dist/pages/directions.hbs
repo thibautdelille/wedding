@@ -1,19 +1,10 @@
-<html>
-	<head>
-	<title>Josephine et Thibaut</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="assets/css/fonts/font.css">
-	<link rel="stylesheet" href="assets/css/style.min.css">
-    <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/7ed1362f-6cd0-4329-a8e4-237bb9b94869.css"/>
-	</head>
-	<body>
-    <div class="card-container">
-	<a href="/"><h2>Josephine et Thibaut</h2></a>
+<div class="card-container">
+	<a href="/"><h2>{{ layout.title }}</h2></a>
 	<ul class="nav">
-		<li class="active"><a href="./directions.html">Directions</a></li>
-		<li><a href="./oudormir.html">Hébergement</a></li>
-		<li><a href="./apropos.html">A propos d&#x27;Areches</a></li>
-		<li><a href="./event.html">Le Mariage</a></li>
+		<li class="active"><a href="{{ layout.location-link }}">{{ layout.location-menu }}</a></li>
+		<li><a href="{{ layout.wheretostay-link }}">{{ layout.wheretostay-menu }}</a></li>
+		<li><a href="{{ layout.aboutareches-link }}">{{ layout.aboutareches-menu }}</a></li>
+		<li><a href="{{ layout.event-link }}">{{ layout.event-menu }}</a></li>
 	</ul>
 	<div id="map-canvas"></div>
 	<p>Nous sommes impatient de célébrer notre mariage avec vous à Ar&ecirc;ches! Nous sommmes conscient que areches n'est pas facil d'accès, nous vous avons donc preparé quelque liens pour faciliter votre organisation.</p>
@@ -36,7 +27,3 @@ France<br/>
 <a href="mailto:tdelille@gmail.com">tdelille@gmail.com</a>
 </p>
 </div>
-	</body>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-  	<script type="text/javascript" src="vendors/docs/script.js"></script>
-</html>

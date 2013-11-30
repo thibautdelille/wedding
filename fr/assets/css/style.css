@@ -1,7 +1,7 @@
 /*!
 Grid
 v1.0.0
-08-31-2013
+11-29-2013
 Made at Thibaut Delille - http://www.thibautdelille.com
 *//*! normalize.css v2.1.1 | MIT License | git.io/normalize */
 
@@ -431,7 +431,7 @@ body {
 img,
 object,
 embed {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -444,8 +444,15 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
-p {
+p,
+ul li {
   font-family: "NewCaledoniaW01-Regular";
+}
+
+p a,
+ul li a {
+  text-decoration: underline;
+  color: #892121;
 }
 
 .padded {
@@ -502,8 +509,8 @@ h1 {
 }
 
 .card-container {
-  width: 500px;
-  margin: 100px auto;
+  width: 620px;
+  margin: 40px auto;
   z-index: 1;
   background-color: white;
 }
@@ -544,7 +551,7 @@ h1 {
 }
 
 #map-canvas {
-  width: 500px;
+  width: 620px;
   height: 300px;
 }
 
@@ -558,9 +565,20 @@ a:hover {
 }
 
 ul.nav {
+  *zoom: 1;
   margin: 0;
   padding: 0;
   border-top: solid 1px #eeeeee;
+}
+
+ul.nav:before,
+ul.nav:after {
+  content: " ";
+  display: table;
+}
+
+ul.nav:after {
+  clear: both;
 }
 
 ul.nav li {
@@ -568,18 +586,18 @@ ul.nav li {
   list-style: none;
   float: left;
   font-family: "TopHatItalic";
-  color: #c5c5c5;
+  color: #999999;
 }
 
 ul.nav li a {
   display: block;
   padding: 1em;
-  color: #c5c5c5;
+  color: #999999;
   text-decoration: none;
 }
 
 ul.nav li a:hover {
-  color: #999999;
+  color: #545454;
 }
 
 ul.nav li:first-child a {
@@ -604,7 +622,11 @@ ul.nav li.active a:hover {
   color: #535353;
 }
 
-@media only screen and (max-width: 500px) {
+ul.nav iframe {
+  width: 100%;
+}
+
+@media only screen and (max-width: 620px) {
   h2 {
     padding: 0 1em;
     margin-top: 20px;
@@ -647,6 +669,11 @@ ul.nav li.active a:hover {
   }
 
   #map-canvas {
+    width: 100%;
+    height: 200px;
+  }
+
+  iframe {
     width: 100%;
     height: 200px;
   }
