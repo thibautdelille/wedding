@@ -226,8 +226,8 @@ module.exports = function(grunt) {
 
   });
 
-  grunt.registerTask('scss', ['sass', 'autoprefixer', 'concat:css', 'cssmin:minify', 'sass:dist']);
-  grunt.registerTask('html', ['assemble:dist']);
+  grunt.registerTask('scss', ['sass', 'autoprefixer', 'concat:css', 'cssmin:minify', 'sass:dist', 'copy:fr', 'assemble:fr']);
+  grunt.registerTask('html', ['assemble:dist', 'assemble:fr']);
   grunt.registerTask('vendors', ['copy:vendors']);
 
   grunt.registerTask('test', ['jshint']);
