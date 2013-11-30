@@ -4,8 +4,12 @@
   "save-the-date":"Reservez la date",
   "location":"LE BEAUFORTAIN, FRANCE",
   "date":"21 juin 2014",
-  "home-menu":"Accueil",
-  "location-menu":"Lieu",
-  "logistics-menu":"Logistiques",
-  "pictures-menu":"Photos"
+  "location-menu":"Acces",
+  "location-link":"./location.html",
+  "wheretostay-menu":"Where to stay",
+  "wheretostay-link":"./wheretostay.html",
+  "aboutareches-menu":"About Areches",
+  "aboutareches-link":"./aboutareches.html",
+  "event-menu":"Wedding Event",
+  "event-link":"./event.html"
 }

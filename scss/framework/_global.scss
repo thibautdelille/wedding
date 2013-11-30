@@ -7,7 +7,7 @@ body{
 // Grid Defaults to get images and embeds to work properly
 img,
 object,
-embed { max-width: 100%; height: auto; }
+embed { width: 100%; height: auto; }
 
 object,
 embed { height: 100%; }
@@ -63,8 +63,8 @@ h1{
 	}
 }
 .card-container{
-	width:500px;
-	margin:100px auto;
+	width:$maxWidth;
+	margin:40px auto;
 	z-index:1;
 	background-color: #FFFFFF;
 	.card{
@@ -96,7 +96,7 @@ h1{
 	}
 }
 #map-canvas{
-	width:500px;
+	width:$maxWidth;
 	height:300px;
 }
 a{
@@ -116,14 +116,14 @@ ul.nav{
 		list-style: none;
 		float:left;
 		font-family:"TopHatItalic";
-		color:#c5c5c5;
+		color:#999999;
 		a{
 			display:block;
 			padding:1em;
-			color:#c5c5c5;
+			color:#999999;
 			text-decoration: none;
 			&:hover{
-				color:#999999;
+				color:#545454;
 			}
 		}
 		&:first-child{
@@ -150,9 +150,12 @@ ul.nav{
 			}
 		}
 	}
+	iframe{
+		width:100%;
+	}
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: $maxWidth) {
 
 	h2{
 		padding:0 1em;
@@ -195,6 +198,10 @@ ul.nav{
 		}
 	}
 	#map-canvas{
+		width:100%;
+		height:200px;
+	}
+	iframe{
 		width:100%;
 		height:200px;
 	}
