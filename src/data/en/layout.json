@@ -10,6 +10,8 @@
   "wheretostay-link":"./wheretostay.html",
   "aboutareches-menu":"About Areches",
   "aboutareches-link":"./aboutareches.html",
+  "registry-menu":"Registry",
+  "registry-link":"./registry.html",
   "event-menu":"Wedding Events",
   "event-link":"./event.html"
 }
