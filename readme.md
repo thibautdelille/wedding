@@ -1,13 +1,10 @@
 # Josephine and Thibaut Wedding website
 
-![areches](http://www.thibautdelille.com/wp-content/uploads/2014/02/wedding-1038x500.jpg "areches")
+![areches](http://www.thibautdelille.com/wp-content/uploads/2014/02/wedding-1038x500.jpg?raw=true "areches")
 
 Website develop with [assemble](http://assemble.io) and my [grid-system](https://github.com/thibautdelille/grid-system). It use SASS and automatically generate the english and french site.
 
------------------------------------------------
 ## Installations
------------------------------------------------
-
 1. Clone the project
 2. Run `npm install`
 3. Make sure you have the Grunt command-line interface with `npm install -g grunt-cli`
