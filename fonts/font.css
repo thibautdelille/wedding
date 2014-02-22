@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'TopHatItalic';
+    src: url('tophatitalic.eot');
+    src: url('tophatitalic.eot') format('embedded-opentype'),
+         url('tophatitalic.woff') format('woff'),
+         url('tophatitalic.ttf') format('truetype'),
+         url('tophatitalic.svg#TopHatItalic') format('svg');
+}
+@font-face {
+    font-family: 'Splendid';
+    src: url('splendid.eot');
+    src: url('splendid.eot') format('embedded-opentype'),
+         url('splendid.woff') format('woff'),
+         url('splendid.ttf') format('truetype'),
+         url('splendid.svg#Splendid') format('svg');
+}

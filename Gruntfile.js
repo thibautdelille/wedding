@@ -96,7 +96,7 @@ module.exports = function(grunt) {
       serverfr: {
         options: {
           hostname: '*',
-          port: 7000,
+          port: 8001,
           base: 'fr/'
         }
       }
@@ -109,7 +109,12 @@ module.exports = function(grunt) {
     copy: {
       fonts: {
         files: [
-          { expand: true, cwd: './icon/fonts', src: ['./**/*.*'], dest: 'dist/assets/css/fonts' }
+          { expand: true, cwd: './fonts', src: ['./**/*.*'], dest: 'dist/assets/css/fonts' }
+        ]
+      },
+      images: {
+        files: [
+          { expand: true, cwd: './images', src: ['./**/*.*'], dest: 'dist/assets/images' }
         ]
       },
       js: {
@@ -238,6 +243,8 @@ module.exports = function(grunt) {
     'concat:css',
     'assemble:dist',
     'copy:vendors',
+    'copy:fonts',
+    'copy:images',
     'cssmin:minify',
     'sass:dist',
     'copy:fr',
