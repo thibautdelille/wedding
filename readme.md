@@ -1,4 +1,4 @@
-# Josephine and Thibaut Wedding website
+# Wedding Website
 
 ![areches](http://www.thibautdelille.com/wp-content/uploads/2014/02/wedding-1038x500.jpg?raw=true "areches")
 
