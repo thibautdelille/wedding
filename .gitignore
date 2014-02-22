@@ -2,6 +2,7 @@
 /node_modules/
 /tmp/
 /dist/
+/fr/
 .DS_Store
 /.grunt/
 .DS_Store
