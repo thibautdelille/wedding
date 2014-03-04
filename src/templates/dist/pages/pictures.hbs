@@ -1,10 +1,13 @@
 <div class="card-container">
-	<a href="/"><h2>{{ layout.title }}</h2></a>
+	<div class="header">
+		<a href="/"><h2>{{ layout.title }}</h2></a>
+	</div>
 	<ul class="nav">
 		<li><a href="./">{{ layout.home-menu }}</a></li>
 		<li><a href="./location.html">{{ layout.location-menu }}</a></li>
 		<li><a href="./wheretostay.html">{{ layout.wheretostay-menu }}</a></li>
 		<li class="active"><a href="./pictures.html">{{ layout.pictures-menu }}</a></li>
+		<li><a href="{{ layout.rsvp-link }}">{{ layout.rsvp-menu }}</a></li>
 	</ul>
 	<img src="assets/images/lac.jpg"/>
 	<img src="assets/images/vallee.jpg"/>

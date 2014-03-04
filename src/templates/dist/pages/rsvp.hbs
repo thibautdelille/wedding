@@ -1,0 +1,35 @@
+<div class="card-container">
+	<div class="header">
+		<a href="/"><h2>{{ layout.title }}</h2></a>
+	</div>
+	<ul class="nav">
+		<li><a href="{{ layout.location-link }}">{{ layout.location-menu }}</a></li>
+		<li><a href="{{ layout.wheretostay-link }}">{{ layout.wheretostay-menu }}</a></li>
+		<li><a href="{{ layout.aboutareches-link }}">{{ layout.aboutareches-menu }}</a></li>
+		<li><a href="{{ layout.event-link }}">{{ layout.event-menu }}</a></li>
+		<li><a href="{{ layout.registry-link }}">{{ layout.registry-menu }}</a></li>
+		<li class="active"><a href="{{ layout.rsvp-link }}">{{ layout.rsvp-menu }}</a></li>
+	</ul>
+	<form action="https://docs.google.com/forms/d/130q-K-3jZgtEOh3mAITYUG3sxrKwbDVe9NrenojWGqg/formResponse?embedded=true" method="POST" id="ss-form" target="_self" onsubmit="">
+		<p>{{ layout.willyouattend}}</p>
+		<p>
+			<input type="radio" name="entry.1194471263" value="Yes" id="group_1194471263_1" role="radio" class="ss-q-radio" aria-label="Yes" required="" aria-required="true">
+			<span class="ss-choice-label">{{ layout.yes}}</span>
+		</p>
+		<p>
+			<input type="radio" name="entry.1194471263" value="No" id="group_1194471263_2" role="radio" class="ss-q-radio" aria-label="No" required="" aria-required="true">
+			<span class="ss-choice-label">{{ layout.no}}</span>
+		</p>
+		<p>{{ layout.firstname}}</p>
+		<p><input type="text" name="entry.621200580" value="" class="ss-q-short" id="entry_621200580" dir="auto" aria-label="Firstname  " aria-required="true" required="" title=""></p>
+		<p>{{ layout.lastname}}</p>
+		<p><input type="text" name="entry.2026766969" value="" class="ss-q-short" id="entry_2026766969" dir="auto" aria-label="Lastname  " aria-required="true" required="" title=""></p>
+		<p>{{ layout.message}}</p>
+		<p><textarea name="entry.294676749" rows="8" cols="0" class="ss-q-long" id="entry_294676749" dir="auto" aria-label="Send us a message  "></textarea></p>
+		<input type="hidden" name="draftResponse" value="[,,&quot;-2175864007489636584&quot;]">
+		<input type="hidden" name="pageHistory" value="0">
+		<input type="hidden" name="fromEmail" value="false">
+		<input type="hidden" name="fbzx" value="-2175864007489636584">
+		<p><input type="submit" name="submit" value="{{ layout.submit }}" id="ss-submit"></p>
+	</form>
+</div>

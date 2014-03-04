@@ -10,6 +10,17 @@
   "wheretostay-link":"./oudormir.html",
   "aboutareches-menu":"A propos d'Arêches",
   "aboutareches-link":"./apropos.html",
+  "registry-menu":"Liste",
+  "registry-link":"./liste.html",
   "event-menu":"Le Mariage",
-  "event-link":"./mariage.html"
+  "event-link":"./mariage.html",
+  "rsvp-menu":"RSVP",
+  "rsvp-link":"./rsvp.html",
+  "willyouattend":"Serez-vous présent a notre mariage?",
+  "yes":"Oui",
+  "no":"Non",
+  "firstname":"Prénom",
+  "lastname":"Nom de Famille",
+  "message":"Envoyez nous un message",
+  "submit":"Envoyer"
 }

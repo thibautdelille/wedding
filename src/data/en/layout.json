@@ -13,5 +13,14 @@
   "registry-menu":"Registry",
   "registry-link":"./registry.html",
   "event-menu":"Wedding Events",
-  "event-link":"./event.html"
+  "event-link":"./event.html",
+  "rsvp-menu":"RSVP",
+  "rsvp-link":"./rsvp.html",
+  "willyouattend":"Will you attend to our wedding?",
+  "yes":"Yes",
+  "no":"No",
+  "firstname":"First Name",
+  "lastname":"Last Name",
+  "message":"Send us a message",
+  "submit":"Submit"
 }
