@@ -78,6 +78,10 @@ module.exports = function(grunt) {
       css: {
         src: ['icon/style.css', 'css/style.autoprefixed.css'],
         dest: 'dist/assets/css/style.css'
+      },
+      js: {
+        src: ['js/*.js'],
+        dest: 'dist/assets/js/script.js'
       }
     },
 
@@ -194,7 +198,7 @@ module.exports = function(grunt) {
       },
       js: {
         files: {
-          'dist/assets/js/aau.min.js': ['dist/assets/js/aau.js']
+          'dist/assets/js/script.min.js': ['dist/assets/js/script.js']
         }
       }
     },
@@ -207,6 +211,10 @@ module.exports = function(grunt) {
       scss: {
         files: ['scss/**/*.scss'],
         tasks: 'scss'
+      },
+      js: {
+        files: ['js/*.js'],
+        tasks: 'js'
       },
       html: {
         files: ['src/**/*.hbs', 'src/**/*.json'],
@@ -232,6 +240,7 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('scss', ['sass', 'autoprefixer', 'concat:css', 'cssmin:minify', 'sass:dist', 'copy:fr', 'assemble:fr']);
+  grunt.registerTask('js', ['concat:js', 'uglify', 'copy:fr', 'assemble:fr']);
   grunt.registerTask('html', ['assemble:dist', 'assemble:fr']);
   grunt.registerTask('vendors', ['copy:vendors']);
 
@@ -255,6 +264,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('assemble');
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-autoprefixer');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
   require('matchdep').filterDev('grunt-contrib*').forEach(grunt.loadNpmTasks);
 };
